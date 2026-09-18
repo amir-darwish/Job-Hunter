@@ -1,4 +1,5 @@
-﻿using JobHunter.Domain.Enums;
+﻿using JobHunter.Domain.Common;
+using JobHunter.Domain.Enums;
 
 namespace JobHunter.Domain.Entities
 {
@@ -22,16 +23,8 @@ namespace JobHunter.Domain.Entities
             {
                 throw new ArgumentException("Company ID must be a positive number.", nameof(companyId));
             }
-            if (careersUrl == null)
-            {
-                throw new ArgumentNullException(nameof(careersUrl), "Careers URL cannot be null.");
-            }
-            if (!careersUrl.IsAbsoluteUri)
-            {
-                throw new ArgumentException("Careers URL must be an absolute URI.", nameof(careersUrl));
-            }
             CompanyId = companyId;
-            CareersUrl = careersUrl;
+            CareersUrl = Guard.ValidHttpUrl(careersUrl, nameof(careersUrl));
             Ats = ats;
             AtsIdentifier = string.IsNullOrWhiteSpace(atsIdentifier) ? null : atsIdentifier.Trim();
             IsEnabled = true;
