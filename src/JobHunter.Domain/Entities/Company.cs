@@ -14,7 +14,7 @@
                 throw new ArgumentException("Company name cannot be null or empty.", nameof(name));
             }
 
-            Name = name;
+            Name = name.Trim();
             IsEnabled = true;
         }
 
