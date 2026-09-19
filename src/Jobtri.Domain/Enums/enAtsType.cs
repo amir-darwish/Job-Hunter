@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace JobHunter.Domain.Enums
+namespace Jobtri.Domain.Enums
 {
     public enum enAtsType
     {

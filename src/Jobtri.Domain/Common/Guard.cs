@@ -1,4 +1,4 @@
-﻿namespace JobHunter.Domain.Common
+namespace Jobtri.Domain.Common
 {
     public static class Guard
     {

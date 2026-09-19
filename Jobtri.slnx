@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Jobtri.Api/Jobtri.Api.csproj" />
+    <Project Path="src/Jobtri.Application/Jobtri.Application.csproj" />
+    <Project Path="src/Jobtri.Domain/Jobtri.Domain.csproj" />
+    <Project Path="src/Jobtri.Infrastructure/Jobtri.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Jobtri.IntegrationTests/Jobtri.IntegrationTests.csproj" />
+    <Project Path="tests/Jobtri.UnitTests/Jobtri.UnitTests.csproj" />
+  </Folder>
+</Solution>

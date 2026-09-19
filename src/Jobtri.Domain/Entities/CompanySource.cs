@@ -1,7 +1,7 @@
-﻿using JobHunter.Domain.Common;
-using JobHunter.Domain.Enums;
+using Jobtri.Domain.Common;
+using Jobtri.Domain.Enums;
 
-namespace JobHunter.Domain.Entities
+namespace Jobtri.Domain.Entities
 {
     public sealed class CompanySource
     {

@@ -1,4 +1,4 @@
-﻿namespace JobHunter.Domain.Entities
+namespace Jobtri.Domain.Entities
 {
     public sealed class Company
     {

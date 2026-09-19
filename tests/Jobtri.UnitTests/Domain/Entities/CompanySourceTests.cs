@@ -1,7 +1,7 @@
-﻿using JobHunter.Domain.Entities;
-using JobHunter.Domain.Enums;
+using Jobtri.Domain.Entities;
+using Jobtri.Domain.Enums;
 
-namespace JobHunter.UnitTests.Domain.Entities
+namespace Jobtri.UnitTests.Domain.Entities
 {
     public sealed class CompanySourceTests
     {

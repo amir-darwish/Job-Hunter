@@ -58,12 +58,12 @@ Job Hunter follows a **Modular Monolith** architecture with clean separation of 
 
 ```
 ┌─────────────────────────────┐
-│        JobHunter.Api        │   REST API / OpenAPI
+│          Jobtri.Api         │   REST API / OpenAPI
 │        ASP.NET Core         │
 └──────────────┬──────────────┘
                │
 ┌──────────────▼──────────────┐
-│   JobHunter.Application     │   Use Cases / Orchestration
+│      Jobtri.Application     │   Use Cases / Orchestration
 │   Services / Interfaces     │
 └──────────────┬──────────────┘
                │
@@ -92,14 +92,14 @@ Job Hunter follows a **Modular Monolith** architecture with clean separation of 
 job-hunter/
 │
 ├── src/
-│   ├── JobHunter.Api/                # REST API, OpenAPI, health checks
-│   ├── JobHunter.Application/        # Use cases, interfaces, scoring, normalization
-│   ├── JobHunter.Domain/             # Entities, value objects, enums, domain rules
-│   └── JobHunter.Infrastructure/     # EF Core, ATS clients, external integrations
+│   ├── Jobtri.Api/                   # REST API, OpenAPI, health checks
+│   ├── Jobtri.Application/           # Use cases, interfaces, scoring, normalization
+│   ├── Jobtri.Domain/                # Entities, value objects, enums, domain rules
+│   └── Jobtri.Infrastructure/        # EF Core, ATS clients, external integrations
 │
 ├── tests/
-│   ├── JobHunter.UnitTests/
-│   └── JobHunter.IntegrationTests/
+│   ├── Jobtri.UnitTests/
+│   └── Jobtri.IntegrationTests/
 │
 ├── docs/
 │   ├── ARCHITECTURE.md               # Full architectural blueprint (41 sections)
@@ -243,7 +243,7 @@ dotnet build
 dotnet test
 
 # Run the API
-dotnet run --project src/JobHunter.Api
+dotnet run --project src/Jobtri.Api
 ```
 
 The API will be available at `https://localhost:5001` with Swagger UI at `/swagger`.

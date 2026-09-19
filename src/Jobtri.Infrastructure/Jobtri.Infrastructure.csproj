@@ -1,7 +1,8 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\JobHunter.Domain\JobHunter.Domain.csproj" />
+    <ProjectReference Include="..\Jobtri.Application\Jobtri.Application.csproj" />
+    <ProjectReference Include="..\Jobtri.Domain\Jobtri.Domain.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

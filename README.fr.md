@@ -58,32 +58,32 @@ Job Hunter suit une architecture **Monolithe Modulaire** avec une séparation cl
 
 ```
 ┌─────────────────────────────┐
-│        JobHunter.Api        │   API REST / OpenAPI
+│          Jobtri.Api         │   API REST / OpenAPI
 │        ASP.NET Core         │
 └──────────────┬──────────────┘
                │
 ┌──────────────▼──────────────┐
-│   JobHunter.Application     │   Cas d'utilisation / Orchestration
+│      Jobtri.Application     │   Cas d'utilisation / Orchestration
 │   Services / Interfaces     │
 └──────────────┬──────────────┘
                │
-       ┌───────┼───────┐
-       │       │       │
-       ▼       ▼       ▼
-  Découverte Scoring   Suivi
-       │
-       ▼
-  Détection ATS
-       │
-  ┌────┼─────┬──────────┐
-  │    │     │          │
-  ▼    ▼     ▼          ▼
- GH  Lever  SR    SuccessFactors
-  │    │     │          │
-  └────┴─────┴──────────┘
-       │
-       ▼
-  Normalisation → Déduplication → EF Core → SQLite
+        ┌───────┼───────┐
+        │       │       │
+        ▼       ▼       ▼
+   Découverte Scoring   Suivi
+        │
+        ▼
+   Détection ATS
+        │
+   ┌────┼─────┬──────────┐
+   │    │     │          │
+   ▼    ▼     ▼          ▼
+  GH  Lever  SR    SuccessFactors
+   │    │     │          │
+   └────┴─────┴──────────┘
+        │
+        ▼
+   Normalisation → Déduplication → EF Core → SQLite
 ```
 
 ### Structure du Projet
@@ -92,14 +92,14 @@ Job Hunter suit une architecture **Monolithe Modulaire** avec une séparation cl
 job-hunter/
 │
 ├── src/
-│   ├── JobHunter.Api/                # API REST, OpenAPI, health checks
-│   ├── JobHunter.Application/        # Cas d'utilisation, interfaces, scoring, normalisation
-│   ├── JobHunter.Domain/             # Entités, value objects, enums, règles métier
-│   └── JobHunter.Infrastructure/     # EF Core, clients ATS, intégrations externes
+│   ├── Jobtri.Api/                   # API REST, OpenAPI, health checks
+│   ├── Jobtri.Application/           # Cas d'utilisation, interfaces, scoring, normalisation
+│   ├── Jobtri.Domain/                # Entités, value objects, enums, règles métier
+│   └── Jobtri.Infrastructure/        # EF Core, clients ATS, intégrations externes
 │
 ├── tests/
-│   ├── JobHunter.UnitTests/
-│   └── JobHunter.IntegrationTests/
+│   ├── Jobtri.UnitTests/
+│   └── Jobtri.IntegrationTests/
 │
 ├── docs/
 │   ├── ARCHITECTURE.md               # Blueprint architectural complet (41 sections)
@@ -243,7 +243,7 @@ dotnet build
 dotnet test
 
 # Lancer l'API
-dotnet run --project src/JobHunter.Api
+dotnet run --project src/Jobtri.Api
 ```
 
 L'API sera disponible sur `https://localhost:5001` avec Swagger UI sur `/swagger`.

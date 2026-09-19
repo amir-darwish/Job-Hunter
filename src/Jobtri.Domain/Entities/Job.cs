@@ -1,6 +1,6 @@
-﻿using JobHunter.Domain.Common;
+using Jobtri.Domain.Common;
 
-namespace JobHunter.Domain.Entities
+namespace Jobtri.Domain.Entities
 {
     public sealed class Job
     {

@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
@@ -19,8 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\JobHunter.Api\JobHunter.Api.csproj" />
-    <ProjectReference Include="..\..\src\JobHunter.Infrastructure\JobHunter.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\Jobtri.Domain\Jobtri.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Jobtri.Application\Jobtri.Application.csproj" />
   </ItemGroup>
 
 </Project>

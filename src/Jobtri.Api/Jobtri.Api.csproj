@@ -11,8 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\JobHunter.Application\JobHunter.Application.csproj" />
-    <ProjectReference Include="..\JobHunter.Infrastructure\JobHunter.Infrastructure.csproj" />
+    <ProjectReference Include="..\Jobtri.Application\Jobtri.Application.csproj" />
+    <ProjectReference Include="..\Jobtri.Infrastructure\Jobtri.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
