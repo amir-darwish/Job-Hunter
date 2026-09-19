@@ -2,11 +2,11 @@
   <a href="README.md">🇬🇧 English</a> · <a href="README.fr.md">🇫🇷 Français</a>
 </p>
 
-# Job Hunter
+# Jobtri
 
 > A decision-support system for job searching — not a web scraper.
 
-Job Hunter discovers, collects, normalizes, scores, and tracks job opportunities from official ATS (Applicant Tracking System) APIs, helping you focus on the roles that actually match your profile.
+Jobtri discovers, collects, normalizes, scores, and tracks job opportunities from official ATS (Applicant Tracking System) APIs, helping you focus on the roles that actually match your profile.
 
 Built with **.NET 10 / ASP.NET Core** as a real-world backend project demonstrating production-grade practices.
 
@@ -24,7 +24,7 @@ Job hunting is broken:
 
 ## The Solution
 
-Job Hunter takes a **quality-over-quantity** approach:
+Jobtri takes a **quality-over-quantity** approach:
 
 ```
 Discover → Collect → Normalize → Deduplicate → Filter → Score → Analyze → Review → Tailor → Track → Learn
@@ -54,7 +54,7 @@ Instead of scraping every website individually, it integrates directly with the 
 
 ## Architecture
 
-Job Hunter follows a **Modular Monolith** architecture with clean separation of concerns:
+Jobtri follows a **Modular Monolith** architecture with clean separation of concerns:
 
 ```
 ┌─────────────────────────────┐
@@ -89,7 +89,7 @@ Job Hunter follows a **Modular Monolith** architecture with clean separation of 
 ### Project Structure
 
 ```
-job-hunter/
+jobtri/
 │
 ├── src/
 │   ├── Jobtri.Api/                   # REST API, OpenAPI, health checks
@@ -233,8 +233,8 @@ GET    /api/analytics/summary           # Search analytics dashboard
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/job-hunter.git
-cd job-hunter
+git clone https://github.com/amir-darwish/Jobtri.git
+cd Jobtri
 
 # Build
 dotnet build

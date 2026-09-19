@@ -2,11 +2,11 @@
   <a href="README.md">🇬🇧 English</a> · <a href="README.fr.md">🇫🇷 Français</a>
 </p>
 
-# Job Hunter
+# Jobtri
 
 > Un système d'aide à la décision pour la recherche d'emploi — pas un simple web scraper.
 
-Job Hunter découvre, collecte, normalise, évalue et suit les offres d'emploi à partir des APIs officielles des systèmes ATS (Applicant Tracking System), pour vous aider à vous concentrer sur les postes qui correspondent réellement à votre profil.
+Jobtri découvre, collecte, normalise, évalue et suit les offres d'emploi à partir des APIs officielles des systèmes ATS (Applicant Tracking System), pour vous aider à vous concentrer sur les postes qui correspondent réellement à votre profil.
 
 Construit avec **.NET 10 / ASP.NET Core** comme un projet backend réaliste démontrant des pratiques de production professionnelles.
 
@@ -24,7 +24,7 @@ La recherche d'emploi est cassée :
 
 ## La Solution
 
-Job Hunter adopte une approche **qualité plutôt que quantité** :
+Jobtri adopte une approche **qualité plutôt que quantité** :
 
 ```
 Découvrir → Collecter → Normaliser → Dédupliquer → Filtrer → Évaluer → Analyser → Réviser → Personnaliser → Suivre → Apprendre
@@ -54,7 +54,7 @@ Au lieu de scraper chaque site individuellement, il s'intègre directement avec 
 
 ## Architecture
 
-Job Hunter suit une architecture **Monolithe Modulaire** avec une séparation claire des responsabilités :
+Jobtri suit une architecture **Monolithe Modulaire** avec une séparation claire des responsabilités :
 
 ```
 ┌─────────────────────────────┐
@@ -89,7 +89,7 @@ Job Hunter suit une architecture **Monolithe Modulaire** avec une séparation cl
 ### Structure du Projet
 
 ```
-job-hunter/
+jobtri/
 │
 ├── src/
 │   ├── Jobtri.Api/                   # API REST, OpenAPI, health checks
@@ -233,8 +233,8 @@ GET    /api/analytics/summary           # Tableau de bord analytique
 
 ```bash
 # Cloner le dépôt
-git clone https://github.com/your-username/job-hunter.git
-cd job-hunter
+git clone https://github.com/amir-darwish/Jobtri.git
+cd Jobtri
 
 # Build
 dotnet build
